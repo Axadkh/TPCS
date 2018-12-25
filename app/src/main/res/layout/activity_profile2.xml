@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.police.org.tpcs.profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/toolbarcolor2">
+
+            <Button
+                android:id="@+id/btnback"
+                android:onClick="btnBackClick"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/ic_back_arrow" />
+
+            <Button
+                android:id="@+id/btnsubmit"
+                android:layout_width="34dp"
+                android:onClick="submitClick"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/btnback"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/ic_check_black_24dp" />
+            <android.support.v7.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:padding="5dp"
+                app:cardCornerRadius="60dp">
+
+                <ImageView
+                    android:id="@+id/profleimage2"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/profile_pic2" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                  android:padding="7dp"
+                android:focusable="true"
+                android:text="Person Name"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/lightgray"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtpersonemal"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:clickable="true"
+                android:background="@drawable/border_line"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:focusable="true"
+                android:textColor="#808080"
+                android:text="example@email.com"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:text="Section"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtsection"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border_line"
+
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:textColor="#808080"
+                android:paddingLeft="20dp"
+                android:focusable="true"
+                android:text="XYZ45"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:text="Phone"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtphone"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_edit_black_24dp"
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="20dp"
+                android:focusable="true"
+                android:background="@drawable/border_line"
+                android:text="033344466677"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#808080"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:focusable="true"
+                android:text="Date of Birth"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtdob"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="20dp"
+                android:background="@drawable/border_line"
+                android:clickable="true"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="7dp"
+                android:focusable="true"
+                android:text="18 / 05 / 1990"
+                android:textColor="#808080"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

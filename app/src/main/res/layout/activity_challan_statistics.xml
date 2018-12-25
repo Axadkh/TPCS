@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.police.org.tpcs.ChallanStatistics_Activity"
+    android:orientation="vertical"
+    android:background="@color/lightgray">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+          >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/scardtody"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                app:contentPadding="5dp"
+
+                android:layout_marginBottom="5dp"
+                android:clickable="true"
+
+                android:background="?android:attr/selectableItemBackground"
+
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="TODAY"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stxt_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="45dp"
+                    android:padding="5dp"
+                    android:text="300"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/simg_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    app:srcCompat="@drawable/ic_arrow_downward_black_24dp" />
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/scardyesterday"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                app:contentPadding="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+               >
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="YESTERDAY"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stxtyesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="45dp"
+                    android:padding="5dp"
+                    android:text="500"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/simgyesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="50dp"
+                    app:srcCompat="@drawable/ic_arrow_upward_black_24dp"
+
+                    />
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_thismonth"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                app:contentPadding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="This Month"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stxt_thismonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="45dp"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_lastmonth"
+                android:layout_width="170dp"
+                android:layout_height="120dp"
+                app:contentPadding="5dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Last Month"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stxt_lastmonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="45dp"
+                    android:padding="5dp"
+                    android:text="0k"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/cardavg"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+
+                app:contentPadding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Avg Per Day"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stxt_avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="45dp"
+                    android:padding="5dp"
+                    android:text="0"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+               android:id="@+id/card_cash"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                app:contentPadding="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Total Cash"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/stxt_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="45dp"
+                    android:padding="5dp"
+                    android:text="27.03k"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_allthetime"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+                app:contentPadding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="All The Time"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="45dp"
+                    android:padding="5dp"
+                    android:id="@+id/stxt_allthetime"
+                    android:text="0"
+
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart"
+                    android:layout_gravity="end"
+                    android:layout_width="220dp"
+                    android:layout_height="match_parent" />
+
+
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

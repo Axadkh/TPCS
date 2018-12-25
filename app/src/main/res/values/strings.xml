@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">TPCS</string>
+    <string name="login">Login</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="sign_up_text">Register Here</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="btn_done">Done</string>
+    <string name="back_to_login"> Back TO Login</string>
+    <string name="email"> Email</string>
+    <string name="passincorrect">User Name or Password is Incorrect</string>
+    <string name="open"> Open</string>
+    <string name="close"> Close </string>
+
+    <string name="conform"> Conform Password</string>
+    <string name="user_name"> User Name</string>
+    <string name="password"> Password</string>
+    <string name="user_id"> User ID</string>
+    <string name="submit"> Conform</string>
+    <string name="incandescentt">Incandescent</string>
+
+    <string name="dash_challan">Challan</string>
+    <string name="dash_profile">Account</string>
+    <string name="traffic_statistics"> Traffic Statistics</string>
+    <string name="challan_statistics"> Challan Statistics</string>
+    <string name="location"> Location</string>
+    <string name="resgistred_vehicle"> Verify Vehicle</string>
+    <string name="h1">The argument in favor of using filler text goes something like this: If you use real content in the design process, anytime you reach a review point you’ll end up reviewing and negotiating the content itself and not the design.
+
+C/O https://placeholder.com/text/</string>
+
+    <string name="next">Next</string>
+    <string-array name="spineer_items">
+        <item>Car</item>
+        <item>Truck</item>
+        <item>Motor cycle</item>
+        <item>Cycle</item>
+        <item>Bus</item>
+    </string-array>
+
+
+    <string name="challan_type">Next</string>
+    <string-array name="ticket_type">
+        <item> Select Voilation Title </item>
+        <item> Driving or parking unregistered motor vehicle</item>
+        <item>Driving  vehicle without License </item>
+        <item>Unauthorized use of Disabled Veteran plate</item>
+        <item>Vehicle in unsafe condition </item>on thereof
+        <item>No light beam indicator</item>
+    </string-array>
+
+    <string name="payment_method">Next</string>
+    <string name="dialog_title">You can Select Multiple</string>
+    <string-array name="pay_method">
+        <item>Payment Method</item>
+        <item>Cash</item>
+        <item>Easy Piasa</item>
+        <item>Pay Pal</item>
+        <item>Jazz Cash</item>
+        <item>VISA</item>
+        <item>Master Card</item>
+    </string-array>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_gmap">Map</string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

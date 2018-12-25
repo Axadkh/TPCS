@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.police.org.tpcs.AddChallan_Atcivity1"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+
+        >
+
+    </include>
+</LinearLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+
+                <android.support.v7.widget.CardView
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/card_for_img1"
+
+                    android:layout_width="101dp"
+                    android:clickable="true"
+                    android:layout_height="111dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/card_img1"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:layout_height="110dp"
+                        android:src="@drawable/ic_car_pic" />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_for_img2"
+                    android:layout_width="101dp"
+                    android:layout_height="110dp"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/card_img2"
+                        android:layout_width="50dp"
+                       android:layout_gravity="center"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_photo_camera_black_24dp"  />
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:clickable="true"
+
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/card_for_img3"
+                    android:layout_width="101dp"
+                    android:layout_height="111dp"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/card_img3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:hintAnimationEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Driver Name"
+
+                android:inputType="text"
+                android:paddingRight="20dp"
+
+                android:textSize="16sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:hintAnimationEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                   android:id="@+id/txt_vehical_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Vehicle ID"
+                    android:inputType="text"
+                    android:paddingRight="20dp"
+
+                    android:textSize="16sp"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+                android:padding="4dp"
+                android:id="@+id/sp_vehical_type"
+                android:spinnerMode="dialog">
+
+            </Spinner>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_license_no"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="License No"
+                    android:inputType="text"
+                    android:paddingRight="30dp"
+
+                    android:textSize="16sp"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="12dp"
+
+                android:id="@+id/license_type"
+                android:spinnerMode="dialog">
+
+            </Spinner>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="13">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_nic_no"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="NIC"
+                    android:inputType="number"
+
+                    android:textSize="16sp"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="11">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_mobile_no"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Mobie NO"
+                    android:inputType="number"
+
+                    android:textSize="16sp"/>
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_next_tochallan2"
+                android:onClick="nextClick"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_background"
+                android:text="@string/next"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

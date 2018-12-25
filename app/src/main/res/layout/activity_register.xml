@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.police.org.tpcs.RegisterActivity"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor">
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/toolbarcolor"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/cardpic"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        app:cardCornerRadius="70dp">
+        <ImageView
+            android:id="@+id/rpic"
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/profile_pic2" />
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inpt_register_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_id"
+                android:inputType="text"
+                android:textSize="17sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inpt_register_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textSize="17sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtsection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Section"
+                android:maxLines="1"
+                android:inputType="text"
+                android:textSize="17sp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inpt_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:textSize="17sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inpt_register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+
+                android:maxLines="1"
+                android:inputType="phone"
+                android:textSize="17sp"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+             android:id="@+id/txtbirth"
+            android:textSize="16sp"
+            android:gravity="left"
+            android:onClick="birthClick"
+            android:text="Select Date of Birth"
+           android:paddingLeft="3dp"
+            android:drawableRight="@drawable/ic_spinericon"
+            android:paddingTop="20dp"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/border_line"
+            android:textColor="#FFA3A3A3"
+            android:layout_marginTop="15dp"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inpt_register_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textSize="17sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/inpt_register_conformpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/conform"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:textSize="17sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background"
+            android:text="@string/btn_sign_up"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:onClick="signupClick"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/txtback_tologin_regact"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:padding="10dp"
+            android:onClick="backClick"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/ic_back_left_black_24dp"
+            android:layout_height="wrap_content"
+            android:text="@string/back_to_login" />
+
+    </LinearLayout>
+
+</ScrollView>

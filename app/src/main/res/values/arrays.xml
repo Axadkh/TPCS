@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="textslide">
+        <item>“Be yourself; everyone else is already taken.”</item>
+        <item>Nothing will work unless you do</item>
+        <item>Good things come in good time.</item>
+        <item>An empty man is full of himself.</item>
+        <item>The secret of your future is hidden in your daily routine</item>
+    </string-array>
+</resources>

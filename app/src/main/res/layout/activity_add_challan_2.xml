@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.police.org.tpcs.AddChallan_Activity2"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        />
+
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundcolor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:padding="7dp"
+                android:text="19 Dec 2018 12:45 am"
+                android:textSize="17sp"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/btn_showlayout"
+                android:layout_gravity="right"
+                android:layout_marginRight="30dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="hideLayout"
+                android:background="@drawable/ic_action_pluse"
+                />
+
+            <LinearLayout
+                android:id="@+id/layout_chselection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+
+                android:layout_marginRight="20dp"
+                android:layout_gravity="left"
+                >
+
+
+                <Spinner
+
+                    android:id="@+id/sp_challanselecter"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="-8dp"
+                    android:entries="@array/ticket_type"
+                    android:layout_marginLeft="3dp"
+                    android:spinnerMode="dialog">
+
+
+                </Spinner>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_chselection2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+
+                android:layout_gravity="left"
+                >
+
+
+
+                <Spinner
+
+                    android:id="@+id/sp_challanselecter2"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:defaultFocusHighlightEnabled="true"
+                    android:entries="@array/ticket_type"
+                    android:spinnerMode="dialog">
+
+
+                </Spinner>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtlocation"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+
+
+                    android:layout_alignTop="@+id/txtchalan_title"
+
+                    android:background="@drawable/border_line"
+                    android:drawableRight="@drawable/ic_gps_fixed_black_24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="4dp"
+
+                    android:paddingTop="5dp"
+                    android:text="Lacation"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_totalamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_line"
+                    android:gravity="top"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:text="Total Amount"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/sp_paymentmetode"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/pay_method"
+                    android:spinnerMode="dialog">
+
+                </Spinner>
+
+
+
+                <EditText
+                    android:id="@+id/txt_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="20dp"
+                    android:drawableRight="@drawable/ic_comment_black_24dp"
+                    android:gravity="top"
+                    android:hint="Comments"
+                    android:maxLength="60"
+                    android:maxLines="3"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="16sp"
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnchallan_submit"
+                android:onClick="submitClicke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="90dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/submit"
+
+                android:textColor="#fff"
+                android:textSize="17sp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

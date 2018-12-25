@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarwithsearch"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbarbk">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/txtsearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:layout_centerVertical="true"
+                android:text="Search Vehicle  ID"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchview"
+                android:layout_width="220dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+
+                android:layout_alignParentTop="true"
+                android:background="@drawable/serach_background"
+                android:fadeScrollbars="true"
+                android:gravity="center"
+                android:visibility="invisible"
+                app:queryHint="Search here"
+                app:voiceIcon="@drawable/ic_keyboard_voice_black_24dp">
+
+            </android.support.v7.widget.SearchView>
+
+            <Button
+                android:id="@+id/btnsearch"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/searchview"
+                android:background="@drawable/ic_search_black_24dp"
+                android:gravity="right"
+                android:onClick="showSearch" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+</LinearLayout>
